@@ -20,8 +20,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Installations
 
-npm install jquery --save
-npm install bootstrap@4.3.1 --save
-npm install popper.js --save
-npm install jest jest-preset-angular --save-dev
+npm install jquery --save\
+npm install bootstrap@4.3.1 --save\
+npm install popper.js --save\
+npm install jest jest-preset-angular --save-dev\
 npm i --save-dev @types/jest
