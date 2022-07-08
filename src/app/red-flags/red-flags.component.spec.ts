@@ -54,13 +54,14 @@ describe('RedFlagsComponent', () => {
     });
 
     test('click to be working', fakeAsync(() => {
-      jest.spyOn(component, 'shuffle');
+      const spy = jest.spyOn(component, 'shuffle');
       let button = fixture.debugElement.nativeElement.querySelector('button');
       button.click();
 
       tick();
 
-      expect(component.shuffle).toHaveBeenCalled();
+      expect(spy).toHaveBeenCalled();
+      spy.mockRestore();
     }));
   });
 });
