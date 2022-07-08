@@ -1,25 +1,10 @@
-.row {
-  margin-top: 200px;
+.container {
+  min-height: calc(100vh - 70px);
 }
 
 .card-item {
   width: 250px;
   height: 300px;
-  border-radius: 15px;
-  border: 1px black solid;
-  box-shadow: 2px 2px 1px black;
-  margin: 0 10px;
-  padding: 20px;
-  font-weight: bold;
-
-  &.card-white {
-    color: red;
-  }
-
-  &.card-red {
-    background-color: red;
-    color: white;
-  }
 
   &.animated {
     animation: fadeIn 1s ease-in-out forwards;
@@ -28,13 +13,10 @@
 
 .button-new {
   height: 100px;
-  background-color: rgb(222, 43, 43);
-  color: white;
   width: 100px;
-  border-radius: 50%;
   left: 500px;
   float: right;
-  margin: 50px 100px 0 0;
+  margin-top: 50px;
 }
 
 @keyframes fadeIn {
@@ -53,5 +35,12 @@
   100% {
     transform: translateX(0%);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-item {
+    height: auto;
+    width: auto;
   }
 }
