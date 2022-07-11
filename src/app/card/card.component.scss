@@ -1,0 +1,34 @@
+.card-item {
+  width: 250px;
+  height: 300px;
+
+  &.animated {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(-100%, -100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(5%, 5%);
+    opacity: 0.4;
+  }
+  80% {
+    transform: translate(5%, 5%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card-item {
+    height: auto;
+    width: auto;
+  }
+}

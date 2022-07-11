@@ -1,0 +1,11 @@
+<div class="col-sm-12 col-md col-lg">
+  <div
+    [ngClass]="
+      type === 'white'
+        ? 'card-item p-3 m-2 bg-light font-weight-bold shadow-lg border border-dark border-1 rounded animated'
+        : 'card-item p-3 m-2 bg-danger text-white font-weight-bold shadow-lg border border-dark border-1 rounded animated'
+    "
+  >
+    {{ cardValue }}
+  </div>
+</div>

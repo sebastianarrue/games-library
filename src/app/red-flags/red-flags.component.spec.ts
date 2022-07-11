@@ -6,6 +6,16 @@ import {
 } from '@angular/core/testing';
 import { RedFlagsComponent } from './red-flags.component';
 import { red, white } from '../utils/contants';
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-card',
+  template: '',
+})
+class MockCardComponent {
+  @Input('value') cardValue = '';
+  @Input() type = '';
+}
 
 describe('RedFlagsComponent', () => {
   let component: RedFlagsComponent;
@@ -13,7 +23,7 @@ describe('RedFlagsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RedFlagsComponent],
+      declarations: [RedFlagsComponent, MockCardComponent],
     }).compileComponents();
   });
 

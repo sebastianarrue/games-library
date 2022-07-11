@@ -1,27 +1,9 @@
 <div class="container h-100 d-flex align-items-center justify-content-center">
   <div>
     <div class="row">
-      <div class="col-sm-12 col-md col-lg">
-        <div
-          class="card-item p-3 m-2 bg-light font-weight-bold shadow-lg border border-dark border-1 rounded animated"
-        >
-          {{ card1 }}
-        </div>
-      </div>
-      <div class="col-sm-12 col-md col-lg">
-        <div
-          class="card-item p-3 m-2 bg-light font-weight-bold shadow-lg border border-dark border-1 rounded animated"
-        >
-          {{ card2 }}
-        </div>
-      </div>
-      <div class="col-sm-12 col-md col-lg">
-        <div
-          class="card-item p-3 m-2 bg-danger text-white font-weight-bold shadow-lg border border-dark border-1 rounded animated"
-        >
-          {{ card3 }}
-        </div>
-      </div>
+      <app-card [value]="card1" type="white"></app-card>
+      <app-card [value]="card2" type="white"></app-card>
+      <app-card [value]="card3" type="red"></app-card>
     </div>
     <div class="row align-items-end">
       <div class="col">
